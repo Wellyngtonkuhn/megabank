@@ -1,4 +1,5 @@
 import { Navbar, Nav, NavDropdown, Container, ButtonGroup, Button } from "react-bootstrap"
+import logo from '../../assets/megaBankLogo.svg'
 
 import "./Navbar.scss"
 
@@ -10,7 +11,12 @@ export default function Menu() {
             <Navbar variant= 'dark' expand="lg">
                 <Container>
                     <Navbar.Brand href="#">
-                    MEGABANK
+                    <img
+                        src={logo}
+                        height="30"
+                        className="d-inline-block align-top"
+                        alt="MegaBank"
+                    />
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls="navbarScroll" />
                     <Navbar.Collapse id="navbarScroll">

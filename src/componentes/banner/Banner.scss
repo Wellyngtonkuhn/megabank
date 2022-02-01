@@ -1,0 +1,35 @@
+.banner{
+    background-color: #8c00b2;
+    border-radius: unset;
+    border: unset;
+    opacity: 1;
+}
+
+.card-img{
+    height: 89vh;
+}
+
+.card-img-overlay{
+    top: 29%;
+    left: 50%;
+}
+
+.card-title h5{
+    font-size: 1.562rem;
+}
+
+.btn{
+    padding: 1rem 2.625rem;
+}
+
+.bannerBtn{
+    font-size: 1.25rem;
+    transition: .6s all ease;
+    margin-top: 1.562rem;
+}
+
+.bannerBtn:hover{
+    background-color: #8c00b2;
+    color: #fff;
+    border: #8c00b2;
+}
