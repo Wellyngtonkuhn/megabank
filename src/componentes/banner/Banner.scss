@@ -1,17 +1,14 @@
 .banner{
-    background-color: #8c00b2;
-    border-radius: unset;
-    border: unset;
-    opacity: 1;
+    background-image: url("../../assets/banner.jpg");
+    background-size: cover;
+    background-position: center top;
 }
 
-.card-img{
-    height: 89vh;
-}
-
-.card-img-overlay{
-    top: 29%;
-    left: 50%;
+/* Desktop */
+@media screen and ( min-width: 992px){
+    .banner_col_direita{
+        text-align: left;
+    }
 }
 
 .card-title h5{
