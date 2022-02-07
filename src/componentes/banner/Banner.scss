@@ -2,12 +2,23 @@
     background-image: url("../../assets/banner.jpg");
     background-size: cover;
     background-position: center top;
+    padding: 2rem 0;
+}
+
+/* Desktop */
+@media screen and (min-width: 1280px){
+    .banner{
+        padding: unset;
+    }
 }
 
 /* Desktop */
 @media screen and ( min-width: 992px){
     .banner_col_direita{
         text-align: left;
+    }
+    .banner_col_esquerda{
+        text-align: right;
     }
 }
 

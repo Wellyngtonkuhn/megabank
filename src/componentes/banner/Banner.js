@@ -1,4 +1,4 @@
-import { Container, Row, Col, Card, Button, Image } from 'react-bootstrap'
+import { Container, Row, Col, Button, Image } from 'react-bootstrap'
 
 
 import './Banner.scss'
@@ -13,7 +13,7 @@ export default function Banner(){
         <>
         <Container fluid className="text-white banner text-center">
             <Row className='py-lg-5' >
-                <Col lg className="my-lg-5" >
+                <Col lg className="my-lg-5 banner_col_esquerda" >
                     <Image className='d-lg-none' src={banner_logo_mobile} alt='banner' />
                     <Image className='d-none d-lg-inline-block' src={banner_logo} alt='banner' />
                 </Col>
