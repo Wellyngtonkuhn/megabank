@@ -1,0 +1,32 @@
+@import '../../variables';
+
+.institucional{
+    background-image: url('../../assets/institucional.jpg');
+    background-size: cover;
+    background-position: center;
+
+    &-title{
+        font-size: 2.2rem;
+        font-weight: 300;
+        line-height: 1.2;
+        overflow-y: hidden;
+
+        @media screen and (min-width: 992px){
+            font-size: 3.2rem;
+        }
+    }
+}
+
+.icon-text{
+    font-size: 1.125rem;
+}
+
+.institucional-content{
+    width: 4260;
+    font-size: 1.125rem;
+
+    @media screen and (min-width: 992px){
+        width: 634px;
+    }
+}
+

@@ -19,7 +19,7 @@ export default function Banner(){
                 </Col>
                 <Col lg className="my-lg-5 banner_col_direita" >
                     <p>Pague suas contas pelo nosso APP</p>
-                    <Button className=' btn bannerBtn' variant='outline-light'>Abra sua conta</Button>
+                    <Button className='btn bannerBtn' variant='outline-light'>Abra sua conta</Button>
                 </Col>
             </Row>
         </Container>      

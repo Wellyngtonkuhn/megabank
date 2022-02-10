@@ -1,0 +1,34 @@
+
+
+.accordion-collapse{
+    background-color: rgb(33, 37, 41);
+    border-color: rgb(33, 37,41);
+}
+
+.accordion-item {
+    background-color:unset;
+    border: unset;
+}
+
+.accordion-button{
+    color: #fff;
+    background-color: #3b2e4a;
+}
+
+.accordion-button:not(.collapsed){
+    color: #fff;
+    background-color: #3b2e4a;
+}
+
+.accordion-button:not(.collapsed)::after {
+    background-image: none;
+}
+
+.footer-title{
+    font-size: 2.5rem;
+    overflow-y: hidden;
+
+    @media screen and (min-width:992px){
+        font-size: 3.5rem;
+    }
+}

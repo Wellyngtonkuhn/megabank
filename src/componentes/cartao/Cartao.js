@@ -2,6 +2,8 @@ import { Container, Row, Col, Image } from "react-bootstrap"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faCreditCard, faMobile, faShoppingCart, faWallet } from "@fortawesome/free-solid-svg-icons";
 
+import './cartao.scss';
+
 
 import cartao from '../../assets/cartao.svg'
 
@@ -12,7 +14,7 @@ export default function Cartao(){
         <Row>
           <Col xs={12} lg={7} className='mb-5 mb-lg-0 px-5 px-lg-0'>
             <Row>
-                <h2 style={{overflow: 'hidden'}} className="display-4 my-5">Cartão de crédito</h2>
+                <h2 className="my-5 credit-card-title">Cartão de crédito</h2>
             </Row>
             <Row>
                 <Col xs={12} lg={6} className='mb-4'>

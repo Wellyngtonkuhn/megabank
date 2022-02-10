@@ -3,13 +3,11 @@
     background-size: cover;
     background-position: center top;
     padding: 2rem 0;
-}
 
-/* Desktop */
-@media screen and (min-width: 1280px){
-    .banner{
-        padding: unset;
-    }
+        /* Desktop */
+        @media screen and (min-width: 1280px){
+            padding: unset;
+        }
 }
 
 /* Desktop */

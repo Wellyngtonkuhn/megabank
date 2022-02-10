@@ -6,6 +6,8 @@ import Banner from "./componentes/banner/Banner";
 import Cartao from "./componentes/cartao/Cartao";
 import BlogList from "./componentes/blog/BlogList";
 import ButtonComponent from "./componentes/button/ButtonComponent";
+import Institucional from "./componentes/institucional/Institucional";
+import Footer from "./componentes/footer/Footer";
 
 
 
@@ -19,6 +21,8 @@ function App() {
         <Cartao />
         <BlogList />
         <ButtonComponent>Abra sua conta</ButtonComponent>
+        <Institucional />
+        <Footer />
     </>
   );
 }
