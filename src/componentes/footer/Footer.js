@@ -1,6 +1,12 @@
-import { Col, Container, Row, Accordion } from "react-bootstrap";
+import { Col, Container, Row, Accordion, Image } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCreditCard, faMobile, faUserTie, faShield } from "@fortawesome/free-solid-svg-icons";
+import magBank from '../../assets/magBank.png'
+import appStore from '../../assets/appStore.jpg'
+import googlePlay from '../../assets/googlePlay.jpg'
+import facebook from '../../assets/facebook.jpg'
+import twitter from '../../assets/twitter.jpg'
+import youtube from '../../assets/youtube.jpg'
 
 import './footer.scss'
 
@@ -15,7 +21,33 @@ export default function Footer(){
           <Container>
             <h2 className="text-center footer-title">Dúvidas frequentes</h2>
             <Row className="py-lg-5">
-              <Col xs={12} lg={5}>
+            
+            <Col xs={12} className='d-lg-none d-flex justify-content-evenly pt-3'>
+                <Row >
+                  <Col>
+                    <FontAwesomeIcon icon={faCreditCard} size="xl"/>
+                  </Col>
+                </Row>
+                <Row>
+                  <Col>
+                    <FontAwesomeIcon icon={faMobile} size="xl" />
+                  </Col>
+                </Row>
+                <Row>
+                  <Col>
+                    <FontAwesomeIcon icon={faShield} size="xl" />
+                  </Col>
+                </Row>
+                <Row>
+                  <Col>
+                    <FontAwesomeIcon icon={faUserTie} size="xl" />
+                  </Col>
+                </Row>
+              </Col>
+
+
+
+            <Col lg={5} className='d-none d-lg-block'>
                 <Row className="mt-5">
                   <Col xs={1} lg={1}>
                     <FontAwesomeIcon icon={faCreditCard} size="lg" />
@@ -49,6 +81,7 @@ export default function Footer(){
                   </Col>
                 </Row>
               </Col>
+
               <Col xs={12} lg={7} className='py-4'>
                 <Accordion defaultActiveKey={["0"]} alwaysOpen>
                   <Accordion.Item eventKey="0">
@@ -115,6 +148,23 @@ export default function Footer(){
               </Col>
             </Row>
           </Container>
+        </Container>
+        
+        <Container>
+          <Row className="text-center">
+            <Col xs={12} lg={4}>
+              <Image src={magBank} alt='magBnak' />
+            </Col>
+            <Col xs={12} lg={4}>
+              <Image src={appStore} alt='appStore' />
+              <Image src={googlePlay} alt='googlePlay' />
+            </Col>
+            <Col xs={12} lg={4}>
+              <Image src={facebook} alt='facebook' />
+              <Image src={twitter} alt='twitter' />
+              <Image src={youtube} alt='youtube' />
+            </Col>
+          </Row>
         </Container>
       </>
     );
