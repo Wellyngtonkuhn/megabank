@@ -141,12 +141,12 @@ export default function Footer(){
 
         <Container className="py-5">
           <Row className="align-items-center text-center">
-            <Col className='px-lg-0' xs={12} lg={6}>
+            <Col className='px-lg-0 logo-footer' xs={12} lg={6}>
               <Image src={magBank} alt="magBnak" />
             </Col>
             <Col className="py-4" xs={12} lg={4}>
               <Image src={appStore} alt="appStore" />
-              <Image className="px-lg4" src={googlePlay} alt="googlePlay" />
+              <Image className="px-4" src={googlePlay} alt="googlePlay" />
             </Col>
             <Col className='px-lg-0' xs={12} lg={2}>
               <Image src={facebook} alt="facebook" />

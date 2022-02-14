@@ -7,7 +7,7 @@ import './institucional.scss'
 
 
 
-export default function Institucional(){
+export default function Institucional({ handleCreateAcc }){
 
     return (
       <section className="institucional text-light py-5 px-4">
@@ -57,7 +57,7 @@ export default function Institucional(){
                   <p className="icon-text">Transações mais seguras</p>
                 </Col>
               </Row>
-              <Button variant="outline-light" className="mt-5">
+              <Button variant="outline-light" className="mt-5" onClick={handleCreateAcc}>
                 Abra sua conta
               </Button>
             </Col>

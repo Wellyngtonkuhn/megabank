@@ -4,7 +4,7 @@ import logo from '../../assets/megaBankLogo.svg'
 import "./Navbar.scss"
 
 
-export default function Menu() {
+export default function Menu({handleCreateAcc}) {
 
     return (
       <>
@@ -45,7 +45,7 @@ export default function Menu() {
                     </NavDropdown.Item>
                   </NavDropdown>
                 </Button>
-                <Button variant="outline-light">Abra sua conta</Button>
+                <Button variant="outline-light" onClick={handleCreateAcc}>Abra sua conta</Button>
               </ButtonGroup>
             </Navbar.Collapse>
           </Container>
