@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 import { Navbar, Nav, NavDropdown, Container, ButtonGroup, Button } from "react-bootstrap"
 import logo from '../../assets/megaBankLogo.svg'
 
@@ -11,12 +13,14 @@ export default function Menu({handleCreateAcc}) {
         <Navbar variant="dark" expand="lg">
           <Container>
             <Navbar.Brand href="#">
-              <img
-                src={logo}
-                height="30"
-                className="d-inline-block align-top"
-                alt="MegaBank"
-              />
+              <Link to="/">
+                <img
+                  src={logo}
+                  height="30"
+                  className="d-inline-block align-top"
+                  alt="MegaBank"
+                />
+              </Link>
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="navbarScroll" />
             <Navbar.Collapse id="navbarScroll">
@@ -33,19 +37,19 @@ export default function Menu({handleCreateAcc}) {
                 <Button variant="outline-light">
                   <NavDropdown
                     title="Acessar minha conta"
-                    id="navbarScrollingDropdown"
+                    id="basic-nav-dropdown"
                   >
-                    <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
-                    <NavDropdown.Item href="#action4">
-                      Another action
+                    <NavDropdown.Item>
+                      <Link to="/login">Pessoa Física</Link>
                     </NavDropdown.Item>
-                    <NavDropdown.Divider />
-                    <NavDropdown.Item href="#action5">
-                      Something else here
+                    <NavDropdown.Item>
+                      <Link to="/login">Pessoa Jurídica</Link>
                     </NavDropdown.Item>
                   </NavDropdown>
                 </Button>
-                <Button variant="outline-light" onClick={handleCreateAcc}>Abra sua conta</Button>
+                <Button variant="outline-light" onClick={handleCreateAcc}>
+                  Abra sua conta
+                </Button>
               </ButtonGroup>
             </Navbar.Collapse>
           </Container>

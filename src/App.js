@@ -1,15 +1,16 @@
 import { useState } from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import "./App.scss"
 
 import Navbar from "./componentes/navbar/Navbar";
-import Banner from "./componentes/banner/Banner";
-import Cartao from "./componentes/cartao/Cartao";
-import BlogList from "./componentes/blog/BlogList";
-import ButtonComponent from "./componentes/button/ButtonComponent";
-import Institucional from "./componentes/institucional/Institucional";
+
+import Home from "./views/Home";
+import Login from './views/Login'
+
 import Footer from "./componentes/footer/Footer";
 import AccountModal from "./componentes/modal/AccountModal";
+
 
 
 
@@ -19,16 +20,17 @@ function App() {
 
 
   return (
-    <>
-        <Navbar handleCreateAcc={()=>setShowModal(true)} />
-        <Banner handleCreateAcc={()=>setShowModal(true)} />
-        <Cartao />
-        <BlogList />
-        <ButtonComponent onClick={()=>setShowModal(true)}>Abra sua conta</ButtonComponent>
-        <Institucional handleCreateAcc={()=>setShowModal(true)} />
-        <Footer />
-        <AccountModal show={showModal} handleClose={()=>setShowModal(false)}/>
-    </>
+    <BrowserRouter>
+      <Navbar handleCreateAcc={() => setShowModal(true)} />
+
+      <Routes>
+        <Route path="/" element={<Home handleClick={() => setShowModal(true)} />} />
+        <Route path="/login" element={<Login />} />
+      </Routes>
+
+      <Footer />
+      <AccountModal show={showModal} handleClose={() => setShowModal(false)} />
+    </BrowserRouter>
   );
 }
 
