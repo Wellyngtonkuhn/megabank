@@ -1,0 +1,45 @@
+@import '../../variables';
+
+
+.user-avatar{
+    position: relative;
+}
+
+.icon-user{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    color: #7c7c7c;
+}
+
+.icon-circle{
+    color: #f8f9fa;
+}
+
+.svg-inline--fa{
+    vertical-align: none;
+}
+
+.user-name{
+    overflow-y: hidden ;
+}
+
+.btn{
+    text-align: left;
+}
+
+.dashboard-button{
+    color: $color-primary;
+    text-decoration: none;
+}
+
+.dashboard-button:hover, .active {
+    color: #fff;
+    background-color: $color-primary;
+    text-decoration: none;
+}
+
+.user-content{
+    overflow-y: hidden;
+}

@@ -6,7 +6,8 @@ import "./App.scss"
 import Navbar from "./componentes/navbar/Navbar";
 
 import Home from "./views/Home";
-import Login from './views/Login'
+import Login from './views/Login';
+import DashBoard from "./views/Dashboard";
 
 import Footer from "./componentes/footer/Footer";
 import AccountModal from "./componentes/modal/AccountModal";
@@ -26,6 +27,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home handleClick={() => setShowModal(true)} />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/dashboard" element={<DashBoard />} />
       </Routes>
 
       <Footer />
