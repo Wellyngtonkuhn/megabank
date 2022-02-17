@@ -34,7 +34,7 @@
     text-decoration: none;
 }
 
-.dashboard-button:hover, .active {
+.dashboard-button:hover, .ativo {
     color: #fff;
     background-color: $color-primary;
     text-decoration: none;
@@ -42,4 +42,12 @@
 
 .user-content{
     overflow-y: hidden;
+}
+
+.nav-link{
+    color: $color-primary;
+}
+
+.nav-link:hover{
+    color: $color-primary;
 }
