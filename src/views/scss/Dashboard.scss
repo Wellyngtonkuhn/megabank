@@ -10,7 +10,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -100%);
-    color: #7c7c7c;
+    color: $color-muted;
 }
 
 .icon-circle{
@@ -25,19 +25,21 @@
     overflow-y: hidden ;
 }
 
-.btn{
-    text-align: left;
-}
-
 .dashboard-button{
     color: $color-primary;
     text-decoration: none;
+    text-align: left;
+    width: 100%;
 }
 
-.dashboard-button:hover, .ativo {
+.ativo {
     color: #fff;
     background-color: $color-primary;
     text-decoration: none;
+}
+.dashboard-button:hover{
+    background-color: $color-muted;
+    color: #fff;
 }
 
 .user-content{
