@@ -11,7 +11,8 @@ import Extrato from "../componentes/dashboard/Extrato";
 
 import "./scss/Dashboard.scss";
 
-export default function DashBoard() {
+export default function DashBoard({ name, conta }) {
+
   const data = {
     lastedDate: [
       { date: "22/07", description: "Saque 24h 012345", value: "300,00" },
@@ -85,8 +86,8 @@ export default function DashBoard() {
                 </span>
               </Col>
               <Col xs={9}>
-                <h2 className="user-name">Felipe Campos</h2>
-                <p className="text-muted">ag: 1234 c/c: 4321-5</p>
+                <h2 className="user-name">{name}</h2>
+                <p className="text-muted">{conta}</p>
               </Col>
             </Row>
             <Row>{link.map(handleLink)}</Row>
